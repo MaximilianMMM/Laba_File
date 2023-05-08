@@ -3,6 +3,9 @@
 
 void calculate(int num_books, int *oldest_i, int *youngest_i, int *longest_title_i, books *arr){
 
+    arr_binary(arr, num_books);
+    read_binary(arr, num_books);
+
     for (int i = 1; i < num_books; i++) {
         if (arr[i].year < arr[*oldest_i].year) {
             *oldest_i = i;
