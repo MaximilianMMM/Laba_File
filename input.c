@@ -2,7 +2,7 @@
 
 void input(int num_books, books *arr){
 
-    FILE *f_in_txt = fopen("input.txt", "w");
+    FILE *f_in_txt = fopen("input.txt", "r");
     if(f_in_txt){
         fscanf(f_in_txt, "%d", &num_books);
         create(num_books, &arr);
